@@ -1,0 +1,6 @@
+<layers>
+  <layer
+      name="plonetheme.fourteamwork"
+      interface="plonetheme.fourteamwork.browser.interfaces.IPlonethemeFourteamworkLayer"
+      />
+</layers>

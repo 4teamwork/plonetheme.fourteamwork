@@ -1,0 +1,3 @@
+Check that the theme contains the correct HTML5 doctype.
+
+    >>> browser.open('/')

@@ -1,0 +1,9 @@
+plonetheme/fourteamwork/docs/_build/*
+plonetheme/fourteamwork/theme_resources/less/plone/*.css
+plonetheme/fourteamwork/theme_resources/less/theme/*.css
+*.egg-info
+*.pyc
+*.pyo
+*~
+.DS_Store
+dist
