@@ -145,7 +145,7 @@
   }
   #mobile-globalnav {
     color: #000000;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #f2f2f2;
     font-size: 16px;
     padding: 10px;
     background: #dddddd;
@@ -169,8 +169,8 @@
   }
   #mobile-search {
     color: #000000;
-    border-bottom: 1px solid #ffffff;
-    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
     font-size: 16px;
     padding: 10px;
     background: #dddddd;

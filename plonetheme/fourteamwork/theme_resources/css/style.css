@@ -566,13 +566,13 @@ div.position-00 {
 }
 /* @group Basics */
 body {
-  background: #ffffff;
+  background: #f2f2f2;
   color: #000000;
   font: 16px Arial, FreeSans, sans-serif;
   width: 100%;
 }
 #container {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0);
   margin: 0;
   width: 100%;
 }
@@ -693,15 +693,15 @@ dd {
 /* @group Navigation/search */
 #portal-logo {
   display: inline-block;
-  margin: 1.375em 0;
+  margin: 15px 0 15px 15px;
 }
 #portal-header {
   position: relative;
   z-index: 2;
 }
 #portal-globalnav {
-  font: 13px Arial, FreeSans, sans-serif;
-  background: #dddddd;
+  font: 14px Arial, FreeSans, sans-serif;
+  background: transparent;
   border-top: 0;
   border-bottom: 0;
   margin: 0 0 1em 0;
@@ -712,27 +712,27 @@ dd {
   border-top: 0;
   border-bottom: 0;
   border-left: 0;
-  border-right: 0;
-  color: #000000 !important;
+  border-right: 1px solid #a0b2be;
+  color: #ffffff !important;
   display: inline-block;
-  font-weight: bold;
-  padding: 1em;
-  background: #dddddd;
+  font-weight: normal;
+  padding: 18px 14px;
+  background: transparent;
   min-width: auto;
   text-decoration: none;
 }
 #portal-globalnav li a:hover {
-  background: #000000;
+  background: url("../images/header_bg_hover.png") repeat-x scroll left top #141820;
   color: #ffffff !important;
   text-decoration: none;
 }
 #portal-globalnav .selected a {
-  background: #205c90;
+  background: url("../images/header_bg_hover.png") repeat-x scroll left top #141820;
   color: #ffffff !important;
   text-decoration: none;
 }
 #portal-globalnav .selected a:hover {
-  background: #205c90;
+  background: url("../images/header_bg_hover.png") repeat-x scroll left top #141820;
   color: #ffffff !important;
   text-decoration: none;
 }
@@ -952,7 +952,7 @@ dl dt span.summary a {
 /* @end */
 /* @group Portlets */
 dl.portlet {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0);
   margin: 0 0 1em;
   font-size: 13px;
 }
@@ -1263,7 +1263,7 @@ dl.portletNavigationTree dd.portletItem {
   padding: 5px;
 }
 #formfield-form-root .widget fieldset div div:hover {
-  background: #f7f7f7;
+  background: rgba(247, 247, 247, 0);
 }
 #formfield-form-root .widget fieldset div div input:last-child {
   float: right;
@@ -1659,20 +1659,20 @@ table.listing tbody tr .error {
   background-color: #ffddcc;
 }
 table.listing tbody tr.odd {
-  background: #f7f7f7;
+  background: rgba(247, 247, 247, 0);
 }
 table.listing tbody tr.odd td {
-  background: #f7f7f7;
+  background: rgba(247, 247, 247, 0);
 }
 table.listing tbody tr.odd .selected td,
 table.listing tbody tr.odd .dragging td {
-  background-color: #f7f7f7;
+  background-color: rgba(247, 247, 247, 0);
 }
 table.listing tbody tr.odd .error td {
   background-color: #ffddcc;
 }
 table.listing tbody tr td {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0);
 }
 table.listing td {
   border-right: 1px solid #ffffff;
@@ -1723,8 +1723,8 @@ div.listingBar a {
   border: 0.1em solid #ffffff !important;
 }
 div.listingBar a:hover {
-  background-color: #f7f7f7;
-  border-color: #f7f7f7;
+  background-color: rgba(247, 247, 247, 0);
+  border-color: rgba(247, 247, 247, 0);
 }
 /* @end */
 /* @group Highslide */
@@ -1910,7 +1910,7 @@ dl.error dd {
 }
 #content li.formTab a.selected {
   font-weight: bold;
-  background: #ffffff;
+  background: #f2f2f2;
   color: #000000;
   border-top-right-radius: 0.5em;
   border-top-left-radius: 0.5em;
@@ -1920,7 +1920,7 @@ dl.error dd {
   -moz-border-radius-topright: 0.5em;
 }
 #content li.formTab a:hover {
-  background: #ffffff;
+  background: #f2f2f2;
   color: #000000;
   border-top-right-radius: 0.5em;
   border-top-left-radius: 0.5em;
@@ -1964,7 +1964,7 @@ dl.error dd {
 }
 #content-views li.selected a {
   font-weight: bold;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0);
   color: #000000;
   border-top-right-radius: 0.5em;
   border-top-left-radius: 0.5em;
@@ -1974,7 +1974,7 @@ dl.error dd {
   -moz-border-radius-topright: 0.5em;
 }
 #content-views li a:hover {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0);
   color: #000000;
   border-top-right-radius: 0.5em;
   border-top-left-radius: 0.5em;
@@ -3396,6 +3396,51 @@ a.historyComparePrevious span {
 }
 .ie7 #content figure figcaption .image-caption:hover {
   left: 0px;
+}
+#portal-personaltools-wrapper {
+  zoom: 1;
+  *zoom: 1;
+}
+#portal-personaltools-wrapper:before,
+#portal-personaltools-wrapper:after {
+  display: table;
+  content: "";
+}
+#portal-personaltools-wrapper:after {
+  clear: both;
+}
+#portal-header {
+  background: url("../images/header_bg.png") repeat-x scroll left top #000000;
+  margin: 10px 13px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 10px 0px #a9a9a9;
+  -moz-box-shadow: 3px 3px 10px 0px #a9a9a9;
+  box-shadow: 3px 3px 10px 0px #a9a9a9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Shadow(Strength='0px', Direction=180, Color='#a9a9a9');
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength='0px', Direction=180, Color='#a9a9a9');
+}
+#portal-columns {
+  background: #FFF;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 10px 0px #a9a9a9;
+  -moz-box-shadow: 3px 3px 10px 0px #a9a9a9;
+  box-shadow: 3px 3px 10px 0px #a9a9a9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Shadow(Strength='0px', Direction=180, Color='#a9a9a9');
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength='0px', Direction=180, Color='#a9a9a9');
+}
+#portal-globalnav {
+  float: right;
+  border-left: 1px solid #A0B2BE;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+#portal-globalnav a {
+  letter-spacing: 0.04em;
+  height: 14;
 }
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
