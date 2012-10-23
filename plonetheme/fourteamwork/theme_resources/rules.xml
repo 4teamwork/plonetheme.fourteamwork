@@ -183,18 +183,18 @@
         <!-- Copy mobile elements -->
         <drop css:theme="#mobile-page-settings"
               if-content="not(//*[@id='edit-bar'])" />
-        <replace css:content="#mobile-menu" css:theme="#mobile-menu" />
+<!--         <replace css:content="#mobile-menu" css:theme="#mobile-menu" />
         <replace css:content="#mobile-page-settings" css:theme="#mobile-page-settings" />
-
+ -->
 
 
         <!-- FOOTER -->
 
         <!-- Content footer is for siteelement doormat, so update this rule if
              doormat is needed for the theme -->
-        <drop css:theme="#content-footer" />
+        <!-- <drop css:theme="#content-footer" /> -->
 
-        <copy css:content-children=".siteelement-footertext .footertext" css:theme="#footer-colophon" />
+        <!-- <copy css:content-children=".siteelement-footertext .footertext" css:theme="#footer-colophon" /> -->
 
     </rules>
 

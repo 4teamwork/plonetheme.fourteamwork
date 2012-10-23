@@ -6,6 +6,9 @@
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 800px) {
+  #portal-globalnav {
+    display: none;
+  }
   .tablet-right-down #portal-column-main {
     margin-right: 0;
   }
@@ -141,6 +144,7 @@
   }
   #mobile-menu {
     display: block!important;
+    float: right;
     visibility: visible;
   }
   #mobile-globalnav {

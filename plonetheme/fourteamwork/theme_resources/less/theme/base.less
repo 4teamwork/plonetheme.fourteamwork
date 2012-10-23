@@ -173,7 +173,7 @@
 @menu-item-color: #FFF;
 @menu-item-font-weight: normal;
 @menu-item-min-width: auto;
-@menu-item-padding: 18px 14px;
+@menu-item-padding: 0 14px;
 @menu-item-hover-background: url("../images/header_bg_hover.png") repeat-x scroll left top #141820;
 @menu-item-hover-font-color: #FFF;
 @menu-item-selected-background: @menu-item-hover-background;
@@ -393,9 +393,9 @@
 @EditBar-color: #666;
 @EditBar-dropdown-border: 0.5em solid @EditBar-background;
 @EditBar-selected-font-weight: bold;
-@EditBar-selected-background: @container-background;
+@EditBar-selected-background: #FFF;
 @EditBar-selected-color: @body-font-color;
-@EditBar-hover-background: @container-background;
+@EditBar-hover-background: #FFF;
 @EditBar-hover-color: @body-font-color;
 @EditBar-subMenuTitle-color: @ContentActionMenus-selected-background;
 
@@ -513,14 +513,14 @@
 
 
 // Data tables
-@Table-background: @container-background;
-@Table-border-color: lighten(@EditBar-default-color, 20%);
+@Table-background: #F6F6F6;
+@Table-border-color: #DDD;
 @Table-border: 1px solid @Table-border-color;
 @Table-th-color: @EditBar-color;
 @Table-th-border: 0.1em solid @Table-border-color;
-@Table-th-background: @EditBar-default-color;
+@Table-th-background: #F5F5F5;
 @Table-tr-odd-th-border: 0.1em solid @Table-border-color;
-@Table-odd-background: darken(@Table-background, 3%);
+@Table-odd-background: transparent;
 @Table-odd-error-background: #fdc;
 @Table-row-selected-background: #ffa;
 @Table-row-error-background: #fdc;

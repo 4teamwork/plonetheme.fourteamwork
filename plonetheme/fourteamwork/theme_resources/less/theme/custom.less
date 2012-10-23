@@ -1,5 +1,9 @@
 // Styles that cannot be found in main.less goes here.
 
+#content {
+    padding: 10px;
+}
+
 #portal-personaltools-wrapper {
     .clearfix();
 }
@@ -27,6 +31,39 @@
 
     a {
         letter-spacing: 0.04em;
-        height: 14;
+        line-height: 50px;
+    }
+}
+
+#content-footer {
+    color: #205C90;
+    font-size: @font-size-smallest;
+    padding: 15px 30px 20px;
+}
+
+table.listing thead th {
+    text-shadow: 0 1px 0 #FFFFFF;
+    font-weight: normal;
+
+    .background-gradient(#F5F5F5, #F5F5F5, #E6E6E6);
+}
+
+table.listing tbody tr td,
+table.listing tbody tr.odd td {
+    text-shadow: 0 1px 0 #FFFFFF;
+    color: #333;
+
+    .background-gradient(#F6F6F6, #F9F9F9, #EDEDED);
+}
+
+// Hack to hide the home button from the menu
+#portaltab-index_html {
+    display: none;
+}
+
+// Hack the menu item padding for small screens
+@media only screen and (min-width: 801px) and (max-width: 880px) {
+    #portal-globalnav li a {
+        padding: 0 7px;
     }
 }
