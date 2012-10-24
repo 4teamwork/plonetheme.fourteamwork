@@ -67,3 +67,55 @@ table.listing tbody tr.odd td {
         padding: 0 7px;
     }
 }
+
+
+.focuss {
+    background-color: #DBEDF9;
+    font-size: 15px;
+    height: 300px;
+    padding: 15px;
+
+    .background-gradient-radial(#D4E8F6, #93BCD8);
+    .rounded-corners(5px);
+    .text-shadow(0, 1px, 0, rgba(255, 255, 255, 0.5));
+
+    h3 {
+        color: #004679;
+        font-size: 27px;
+        font-weight: 300;
+        margin: 0.5em 0 0;
+    }
+
+    .image-right {
+        float: right;
+        margin: 0.5em;
+    }
+}
+
+.callout {
+    background: url("../images/quote_sm.png") no-repeat 0 1em transparent !important;
+    border: 0 !important;
+    color: #555555;
+    font: 1.2em/1.5em Georgia,"Times New Roman",Times,serif;
+    padding: 1em 8em 0 20px;
+}
+
+
+
+
+
+.scrollable {
+    position:relative;
+    overflow:hidden;
+    width: 100%;
+    min-height: 300px;
+
+    .items {
+        width:20000em;
+        position:absolute;
+
+        div {
+            float:left;
+        }
+    }
+}

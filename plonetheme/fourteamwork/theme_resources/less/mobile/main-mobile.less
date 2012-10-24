@@ -69,11 +69,36 @@
         padding: 10px;
         background: @mobile-Mobile-globalnav-background;
         cursor: pointer;
+        border: 1px solid #000;
+        margin-right: 15px;
+        margin-top: 8px;
+
+        .rounded-corners(5px);
+
+        .menu-bar {
+            background-color: #ddd;
+
+            display: block;
+            height: 2px;
+            width: 18px;
+            margin-top: 3px;
+
+            .rounded-corners(1px);
+            .box-shadow(0px, 1px, 0px, 0px, #000);
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
     }
 
     #portal-globalnav {
         display: none;
         visibility: hidden;
+        float: none;
+        border: 0;
+        margin: 0;
+
 
         li, li a {
             display:block;
@@ -82,6 +107,20 @@
         }
         li a {
             padding: @mobile-Portal-globalnav-item-padding;
+            border: 0;
+            line-height: 30px;
+
+            &:hover {
+                background: transparent;
+            }
+        }
+
+        .selected a {
+            background: transparent;
+
+            &:hover {
+                background: transparent;
+            }
         }
     }
 
@@ -248,5 +287,10 @@
         text-align: @mobile-Login-form-label-text-align;
     }
 
+    // FOOTER
+    #content-footer {
+        text-align: center;
+        line-height: 1.5;
+    }
 
 }

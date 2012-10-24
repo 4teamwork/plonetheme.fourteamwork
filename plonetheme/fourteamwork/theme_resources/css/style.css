@@ -1403,7 +1403,7 @@ dl.portletNavigationTree dd.portletItem {
   letter-spacing: -0.08em !important;
 }
 #content .callout {
-  background: #eeeeee;
+  background: transparent;
   padding: 1em;
   border-left: 1em solid #ccc;
   clear: both;
@@ -3309,6 +3309,52 @@ table.listing tbody tr.odd td {
   #portal-globalnav li a {
     padding: 0 7px;
   }
+}
+.focuss {
+  background-color: #DBEDF9;
+  font-size: 15px;
+  height: 300px;
+  padding: 15px;
+  background-color: #93bcd8;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#d4e8f6), to(#93bcd8));
+  background-image: -webkit-radial-gradient(circle, #d4e8f6, #93bcd8);
+  background-image: -moz-radial-gradient(circle, #d4e8f6, #93bcd8);
+  background-image: -o-radial-gradient(circle, #d4e8f6, #93bcd8);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.focuss h3 {
+  color: #004679;
+  font-size: 27px;
+  font-weight: 300;
+  margin: 0.5em 0 0;
+}
+.focuss .image-right {
+  float: right;
+  margin: 0.5em;
+}
+.callout {
+  background: url("../images/quote_sm.png") no-repeat 0 1em transparent !important;
+  border: 0 !important;
+  color: #555555;
+  font: 1.2em/1.5em Georgia, "Times New Roman", Times, serif;
+  padding: 1em 8em 0 20px;
+}
+.scrollable {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 300px;
+}
+.scrollable .items {
+  width: 20000em;
+  position: absolute;
+}
+.scrollable .items div {
+  float: left;
 }
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

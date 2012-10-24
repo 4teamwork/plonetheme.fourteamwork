@@ -63,6 +63,15 @@
     background-image: -o-linear-gradient(top, @from, @to);
 }
 
+.background-gradient-radial(@innerColor: #555, @outerColor: #333)  {
+    background-color: @outerColor;
+    background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(@innerColor), to(@outerColor));
+    background-image: -webkit-radial-gradient(circle, @innerColor, @outerColor);
+    background-image: -moz-radial-gradient(circle, @innerColor, @outerColor);
+    background-image: -o-radial-gradient(circle, @innerColor, @outerColor);
+    background-repeat: no-repeat;
+}
+
 .text-shadow(@horizontal: 1px, @vertical: 1px, @blur: 1px, @color: #000) {
     text-shadow: @horizontal @vertical @blur @color;
     //filter: e(%("dropshadow(color='%d', offx='%d', offy='%d')", @color, @horizontal, @vertical));

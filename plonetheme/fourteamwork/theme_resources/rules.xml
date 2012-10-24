@@ -102,8 +102,8 @@
 
         <!-- BODY -->
 
-        <!-- Drop breadcrumbs -->
-        <drop css:content="#portal-breadcrumbs" />
+        <!-- Drop not needed elements -->
+        <drop css:content="#portal-breadcrumbs, #parent-fieldname-title, #viewlet-below-content-title, #parent-fieldname-description, #viewlet-above-content-body" />
 
         <replace css:content-children="#portal-column-content" css:theme-children="#portal-column-content" />
 
