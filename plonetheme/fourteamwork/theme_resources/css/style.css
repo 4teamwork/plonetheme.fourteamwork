@@ -978,7 +978,7 @@ dl.portlet a {
 }
 dl.portlet a:link {
   color: #205c90;
-  border-bottom: 0.1em solid #cccccc;
+  border-bottom: 0;
 }
 dl.portlet a:visited {
   color: #205c90;
@@ -1331,7 +1331,7 @@ dl.portletNavigationTree dd.portletItem {
 }
 #content a:link {
   color: #205c90;
-  border-bottom: 0.1em solid #cccccc;
+  border-bottom: 0;
 }
 #content a:visited {
   color: #205c90;
@@ -3226,6 +3226,203 @@ a.historyComparePrevious span {
   line-height: 1!important;
   margin-bottom: 0!important;
 }
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+  max-width: 100%;
+  display: block;
+}
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+/* Clearfix for the .slides element */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .slides {
+  display: block;
+}
+* html .slides {
+  height: 1%;
+}
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+  display: block;
+}
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+  margin: 0 0 60px;
+  background: #fff;
+  position: relative;
+  zoom: 1;
+}
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.loading .flex-viewport {
+  max-height: 300px;
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.carousel li {
+  margin-right: 5px;
+}
+/* Direction Nav */
+.flex-direction-nav {
+  *height: 0;
+}
+.flex-direction-nav a {
+  width: 30px;
+  height: 30px;
+  margin: -20px 0 0;
+  display: block;
+  background: url(../images/bg_direction_nav.png) no-repeat 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+}
+.flex-direction-nav .flex-next {
+  background-position: 100% 0;
+  right: -36px;
+}
+.flex-direction-nav .flex-prev {
+  left: -36px;
+}
+.flexslider:hover .flex-next {
+  opacity: 0.8;
+  right: 5px;
+}
+.flexslider:hover .flex-prev {
+  opacity: 0.8;
+  left: 5px;
+}
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+  opacity: .3!important;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+/* Control Nav */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+}
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 0;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0;
+  }
+}
 #content {
   padding: 10px;
 }
@@ -3310,26 +3507,8 @@ table.listing tbody tr.odd td {
     padding: 0 7px;
   }
 }
-.scrollable {
-  position: relative;
-  overflow: hidden;
-  width: 977px;
-  height: 460px;
-  margin: 0 30px;
-}
-.scrollable .items {
-  width: 20000em;
-  position: absolute;
-}
-.scrollable .items div {
-  float: left;
-}
-.focuss {
+.flexslider {
   background-color: #DBEDF9;
-  font-size: 15px;
-  width: 947px;
-  height: 330px;
-  padding: 15px;
   background-color: #93bcd8;
   background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#d4e8f6), to(#93bcd8));
   background-image: -webkit-radial-gradient(circle, #d4e8f6, #93bcd8);
@@ -3341,13 +3520,17 @@ table.listing tbody tr.odd td {
   -moz-border-radius: 5px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
-.focuss h3 {
+.focuss-wrapper {
+  font-size: 15px;
+  padding: 15px;
+}
+.focuss-wrapper h3 {
   color: #004679;
   font-size: 27px;
   font-weight: 300;
   margin: 0.5em 0 0;
 }
-.focuss .image-right {
+.focuss-wrapper .image-right {
   float: right;
   margin: 0.5em;
 }
@@ -3357,45 +3540,6 @@ table.listing tbody tr.odd td {
   color: #555555;
   font: 1.2em/1.5em Georgia, "Times New Roman", Times, serif;
   padding: 1em 8em 0 20px;
-}
-a.browse {
-  background: url("../images/hori_large.png") no-repeat;
-  display: block;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  font-size: 1px;
-  position: absolute;
-  top: 230px;
-}
-a.right {
-  background-position: 0 -30px;
-  right: 7px;
-}
-a.right:hover {
-  background-position: -30px -30px;
-}
-a.right:active {
-  background-position: -60px -30px;
-}
-a.right.disabled {
-  background-position: 0 -30px;
-}
-a.left {
-  left: 7px;
-}
-a.left:hover {
-  background-position: -30px 0;
-}
-a.left:active {
-  background-position: -60px 0;
-}
-a.left.disabled {
-  background-position: 0 0;
-}
-a.browse.disabled {
-  cursor: default;
-  opacity: 0.3;
 }
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

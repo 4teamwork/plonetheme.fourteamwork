@@ -21,6 +21,18 @@
         enabled="True"
         expression=""
         inline="False"
+        id="++theme++plonetheme.fourteamwork/javascript/libs/jquery.flexslider.js"
+    />
+
+
+    <javascript
+        cacheable="True"
+        compression="safe"
+        conditionalcomment=""
+        cookable="True"
+        enabled="True"
+        expression=""
+        inline="False"
         id="++theme++plonetheme.fourteamwork/javascript/script.js"
     />
 
