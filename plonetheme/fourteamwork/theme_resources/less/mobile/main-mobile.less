@@ -287,6 +287,35 @@
         text-align: @mobile-Login-form-label-text-align;
     }
 
+
+    // LOGO TABLE
+
+    .flex-control-nav {
+        bottom: -30px;
+    }
+
+    // Remove the star from logo table
+    .logo-star {
+        display: none;
+    }
+
+    // Stack up the logos
+    .logo-table {
+        margin: 0 auto;
+        width: 60%;
+
+        .logo-cell {
+            display: block;
+            border-right: 0;
+            line-height: 75px;
+            width: 100%;
+
+            &:last-child {
+                padding-bottom: 10px;
+            }
+        }
+    }
+
     // FOOTER
     #content-footer {
         text-align: center;

@@ -9,6 +9,9 @@
   #portal-globalnav {
     display: none;
   }
+  .logo-star {
+    margin-top: -100px;
+  }
   .tablet-right-down #portal-column-main {
     margin-right: 0;
   }
@@ -345,6 +348,25 @@
   #fieldset-openid-login label,
   #login-form label {
     text-align: center;
+  }
+  .flex-control-nav {
+    bottom: -30px;
+  }
+  .logo-star {
+    display: none;
+  }
+  .logo-table {
+    margin: 0 auto;
+    width: 60%;
+  }
+  .logo-table .logo-cell {
+    display: block;
+    border-right: 0;
+    line-height: 75px;
+    width: 100%;
+  }
+  .logo-table .logo-cell:last-child {
+    padding-bottom: 10px;
   }
   #content-footer {
     text-align: center;
