@@ -3526,6 +3526,12 @@ table.listing tbody tr.odd td {
 #content .flexslider ol {
   margin-left: 0;
 }
+#content .flexslider .focuss-wrapper ol {
+  margin-left: 2em;
+}
+#content .flexslider .focuss-wrapper ul {
+  margin-left: 2em !important;
+}
 .flexslider ul,
 .logo-flexslider ul {
   list-style-type: none !important;
