@@ -138,17 +138,17 @@
   }
   .sidebars-right .tablet-right-down #portal-column-wrapper {
     margin-left: 0;
-    margin-right: 212px;
+    margin-right: 250px;
   }
   .sidebars-right .tablet-right-down #portal-column-main {
-    margin-right: -212px;
+    margin-right: -250px;
   }
   .sidebars-right .tablet-left-down #portal-column-wrapper {
     margin-left: 0;
-    margin-right: 312px;
+    margin-right: 262px;
   }
   .sidebars-right .tablet-left-down #portal-column-main {
-    margin-right: -312px;
+    margin-right: -262px;
   }
   .sidebars-right .tablet-left-down #portal-column-one {
     margin-left: 0;
@@ -179,7 +179,8 @@
   }
   #portal-column-main,
   #portal-column-one,
-  #portal-column-two {
+  #portal-column-two,
+  .focuss-wrapper .row > div {
     display: block;
     float: none!important;
     position: relative;
@@ -198,6 +199,23 @@
   }
   #portal-column-two {
     margin-left: 0!important;
+  }
+  .focuss-wrapper .row > div {
+    margin: 0!important;
+    left: 0!important;
+  }
+  .focuss-wrapper {
+    padding: 10px 25px;
+  }
+  .focuss-wrapper h2,
+  .focuss-wrapper h3,
+  .focuss-wrapper h4 {
+    margin: 0;
+  }
+  .focuss-wrapper .image-right,
+  .focuss-wrapper .image-left {
+    float: none;
+    margin: 0 auto;
   }
   #portal-personaltools {
     font-size: 12px !important;

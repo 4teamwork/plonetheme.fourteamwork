@@ -173,7 +173,8 @@ table.listing tbody tr.odd td {
     background-color: #E7EFFB;
     background-image: radial-gradient(circle farthest-side at 50% 50% , #E7EFFB 0%, #E7EFFB 43%, #DAE3EA 100%);
     border-color: #D7EAF8;
-    border-radius: 9px 0 0 9px;
+    // border-radius: 9px 0 0 9px;
+    border-radius: 9px;
     border-style: solid;
     border-width: 1px;
     box-shadow: 5px 5px 4px rgba(239, 244, 250, 0.65) inset, -6px -4px 4px rgba(200, 216, 231, 0.55) inset;
@@ -182,6 +183,7 @@ table.listing tbody tr.odd td {
     line-height: 120%;
     margin-bottom: 10px;
     padding: 8px;
+    overflow: hidden;
 }
 
 #tabs-nav li.flex-active, #tabs-nav li:hover {
@@ -193,6 +195,80 @@ table.listing tbody tr.odd td {
     box-shadow: 5px 5px 4px rgba(195, 227, 243, 0.65) inset;
 }
 
+// special page specific stylings
+
+.mobile-workspace {
+    h3 {
+        font-size: 17px;
+    }
+}
+
+.management {
+    .image-left {
+        margin-top: 20px;
+    }
+    .callout {
+        margin: 0;
+        padding-bottom: 0 !important;
+    }
+    .contact-options {
+        a {
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.best-list {
+    li {
+        float: left;
+        background: #FFF;
+        margin-right: 10px;
+        margin-bottom: 10px !important;
+        width: 220px;
+
+        .rounded-corners(5px);
+        .background-gradient(#F5F5F5, #F5F5F5, #DDDDDD);
+    }
+    .top {
+        color: #FFF;
+        height: 28px;
+        padding-top: 12px;
+        text-align: center;
+
+        .background-gradient(#4DB2E0, #4DB2E0, #469EC9);
+        .rounded-corners-top(5px);
+        .text-shadow(0px, -1px, 0px, rgba(0, 0, 0, 0.3));
+    }
+    .bottom {
+        display: table-cell;
+        height: 120px;
+        vertical-align: middle;
+        padding-left: 15px;
+    }
+}
+
+.office-photos {
+    .row {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .image-inline {
+        margin: 0 auto;
+
+        .rotation(-6deg);
+    }
+}
+
+.team-photo {
+    max-width: 100%;
+}
+
+.download-item {
+    float: left;
+    margin-right: 30px;
+}
 
 // LOGO TABLE
 

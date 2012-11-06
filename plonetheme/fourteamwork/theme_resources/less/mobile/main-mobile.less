@@ -9,7 +9,8 @@
 
     #portal-column-main,
     #portal-column-one,
-    #portal-column-two {
+    #portal-column-two,
+    .focuss-wrapper .row > div {
         display: block;
         float: none!important;
         position: relative;
@@ -29,6 +30,23 @@
     }
     #portal-column-two {
         margin-left: 0!important;
+    }
+    .focuss-wrapper .row > div {
+        margin: 0!important;
+        left: 0!important;
+    }
+
+    .focuss-wrapper {
+        padding: 10px 25px;
+
+        h2, h3, h4 {
+            margin: 0;
+        }
+        .image-right,
+        .image-left {
+            float: none;
+            margin: 0 auto;
+        }
     }
 
 
@@ -286,6 +304,10 @@
     #fieldset-openid-login label, #login-form label {
         text-align: @mobile-Login-form-label-text-align;
     }
+
+
+    // PAGES
+
 
 
     // LOGO TABLE
