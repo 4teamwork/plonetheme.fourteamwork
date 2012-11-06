@@ -17,7 +17,8 @@
     });
 
     $('.flexslider').flexslider({
-        animation: 'slide'
+        animation: 'slide',
+        manualControls: '#tabs-nav li'
     });
 
     $('.logo-flexslider').flexslider({
