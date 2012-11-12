@@ -158,6 +158,10 @@ table.listing tbody tr.odd td {
     font-size: 13px;
     padding: 7px 15px;
     margin-top: 20px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #content {
@@ -227,20 +231,18 @@ table.listing tbody tr.odd td {
 }
 
 .best-list {
-    li {
-        float: left;
+    .best-item {
         background: #FFF;
         margin-right: 10px;
         margin-bottom: 10px !important;
-        width: 220px;
 
         .rounded-corners(5px);
         .background-gradient(#F5F5F5, #F5F5F5, #DDDDDD);
     }
     .top {
         color: #FFF;
-        height: 28px;
-        padding-top: 12px;
+        min-height: 28px;
+        padding: 5px;
         text-align: center;
 
         .background-gradient(#4DB2E0, #4DB2E0, #469EC9);
@@ -252,6 +254,11 @@ table.listing tbody tr.odd td {
         height: 120px;
         vertical-align: middle;
         padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    img {
+        width: 100%;
     }
 }
 

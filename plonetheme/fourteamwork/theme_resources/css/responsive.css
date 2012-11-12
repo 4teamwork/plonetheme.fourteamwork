@@ -6,6 +6,15 @@
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 800px) {
+  #portal-column-wrapper {
+    margin-left: 212px;
+  }
+  #portal-column-one {
+    width: 212px;
+  }
+  .focuss-wrapper {
+    padding: 0px 25px;
+  }
   #mobile-menu {
     display: block!important;
     float: right;
@@ -171,6 +180,31 @@
   .sidebars-right .no-left-column .tablet-right-down #portal-column-main {
     margin-right: 0;
   }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+  .focuss-wrapper h3 {
+    font-size: 24px;
+  }
+  .home-cube {
+    width: 40%;
+  }
+  .teamraum-box {
+    width: 80%;
+  }
+  .gever h3 {
+    font-size: 20px;
+  }
+  .gever-img {
+    width: 50%;
+  }
+  .contact-options {
+    display: none;
+  }
+  .github-img {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 480px) {
   body,
@@ -216,6 +250,34 @@
   .focuss-wrapper .image-left {
     float: none;
     margin: 0 auto;
+  }
+  .focuss-wrapper {
+    padding: 5px 25px;
+  }
+  .home-cube {
+    display: none!important;
+  }
+  .home-devices {
+    width: 50%;
+  }
+  .home-sharepoint {
+    width: 70%;
+  }
+  .gever h3 {
+    font-size: 20px;
+  }
+  .gever-img {
+    width: 50%;
+  }
+  .contact-options {
+    display: none;
+  }
+  .best-list .best-item {
+    float: left;
+    width: 45%;
+  }
+  .management h3 {
+    font-size: 24px;
   }
   #portal-personaltools {
     font-size: 12px !important;
@@ -435,6 +497,15 @@
   #login-form label {
     text-align: center;
   }
+  .home-cube {
+    margin-bottom: -20px;
+  }
+  .home-devices,
+  .home-sharepoint,
+  .home-nuss {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
   .flex-control-nav {
     bottom: -30px;
   }
@@ -453,6 +524,9 @@
   }
   .logo-table .logo-cell:last-child {
     padding-bottom: 10px;
+  }
+  .portlet-static-kompetenzen {
+    display: none;
   }
   #content-footer {
     text-align: center;
