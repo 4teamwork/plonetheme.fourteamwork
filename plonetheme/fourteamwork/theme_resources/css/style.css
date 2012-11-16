@@ -593,18 +593,18 @@ h4,
 h5,
 h6 {
   font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
-  font-weight: bold;
-  color: #000000;
+  font-weight: 300;
+  color: #004679;
   line-height: 1.5em;
 }
 h1 {
   font-size: 2em;
 }
 h2 {
-  font-size: 1.75em;
+  font-size: 27px;
 }
 h3 {
-  font-size: 1.25em;
+  font-size: 25px;
 }
 h4 {
   font-size: 1.25em;
@@ -620,7 +620,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #444444;
+  color: #004679;
 }
 h2 a,
 h3 a,
@@ -704,7 +704,7 @@ dd {
   background: transparent;
   border-top: 0;
   border-bottom: 0;
-  margin: 0 0 1em 0;
+  margin: 0;
   padding: 0;
   clear: both;
 }
@@ -1351,7 +1351,7 @@ dl.portletNavigationTree dd.portletItem {
 }
 #content ul {
   list-style-type: disc;
-  margin-left: 2em;
+  margin-left: 0;
 }
 #content ol {
   list-style-type: decimal;
@@ -2735,7 +2735,7 @@ body.template-new-user #content input {
 }
 /* @end */
 /* @group Table of Contents */
-/* Table of Contents styling - essentially a portlet with smaller fonts and 
+/* Table of Contents styling - essentially a portlet with smaller fonts and
     aligned right + limited in width */
 dl.toc {
   float: right;
@@ -3425,6 +3425,7 @@ html[xmlns] .slides {
 }
 #content {
   padding: 10px;
+  word-wrap: break-word;
 }
 #portal-personaltools-wrapper {
   zoom: 1;
@@ -3507,7 +3508,7 @@ table.listing tbody tr.odd td {
     padding: 0 7px;
   }
 }
-.flexslider {
+.flexslider .blue-slide {
   background-color: #DBEDF9;
   background-color: #93bcd8;
   background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#d4e8f6), to(#93bcd8));
@@ -3535,7 +3536,6 @@ table.listing tbody tr.odd td {
 .flexslider ul,
 .logo-flexslider ul {
   list-style-type: none !important;
-  margin-left: 0 !important;
 }
 .flexslider .flex-control-nav li,
 .logo-flexslider .flex-control-nav li {
@@ -3548,7 +3548,7 @@ table.listing tbody tr.odd td {
 }
 .focuss-wrapper h3 {
   color: #004679;
-  font-size: 27px;
+  font-size: 25px;
   font-weight: 300;
   margin: 0.5em 0 0;
 }
@@ -3569,6 +3569,9 @@ table.listing tbody tr.odd td {
   color: #555555;
   font: 1.2em/1.5em Georgia, "Times New Roman", Times, serif;
   padding: 1em 8em 0 20px;
+}
+.home-page .callout {
+  background-image: none !important;
 }
 .buttonTesten {
   display: inline-block;
@@ -3757,6 +3760,39 @@ table.listing tbody tr.odd td {
 }
 .logo-table .logo-cell .logo-wrapper img {
   max-width: 100%;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ie7 #portal-globalnav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.ie7 .flexslider .flex-control-nav li {
+  display: inline!important;
+}
+.ie7 .logo-table .logo-cell {
+  float: left;
+  height: 150px;
+}
+.ie7 .logo-table .logo-cell .logo-wrapper {
+  padding-top: 20px;
+}
+.ie8 .best-list img {
+  width: auto!important;
 }
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

@@ -207,6 +207,9 @@
   }
 }
 @media only screen and (max-width: 480px) {
+  .mobile-hide {
+    display: none !important;
+  }
   body,
   #container {
     width: 100%;
