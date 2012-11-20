@@ -28,5 +28,9 @@
         directionNav: false
     });
 
+    $("#github_badge").GitHubBadge({
+        login: "4teamwork",
+        image_path: "++theme++plonetheme.fourteamwork/images/"
+    });
 
 }(jQuery));
