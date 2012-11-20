@@ -4115,6 +4115,7 @@ table.listing tbody tr.odd td {
 }
 .referenzen-company {
   margin: 0 !important;
+  margin-bottom: -5px !important;
   font-size: 17px !important;
 }
 .aboutus-contact h3 {
