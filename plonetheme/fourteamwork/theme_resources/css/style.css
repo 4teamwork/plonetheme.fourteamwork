@@ -3899,6 +3899,9 @@ table.listing tbody tr.odd td {
 #content .flexslider ol {
   margin-left: 0;
 }
+#content .flexslider .focuss-wrapper h2 {
+  margin-top: 0;
+}
 #content .flexslider .focuss-wrapper ol {
   margin-left: 2em;
 }
@@ -3941,6 +3944,7 @@ table.listing tbody tr.odd td {
   color: #555555;
   font: 1.2em/1.5em Georgia, "Times New Roman", Times, serif;
   padding: 1em 8em 0 20px;
+  margin: 0 !important;
 }
 .home-page .callout {
   background-image: none !important;
@@ -3984,6 +3988,7 @@ table.listing tbody tr.odd td {
   margin-bottom: 10px;
   padding: 8px;
   overflow: hidden;
+  cursor: pointer;
 }
 #tabs-nav li.flex-active,
 #tabs-nav li:hover {
@@ -3999,10 +4004,12 @@ table.listing tbody tr.odd td {
 }
 .management .image-left {
   margin-top: 20px;
+  margin-left: 0;
 }
 .management .callout {
   margin: 0;
   padding-bottom: 0 !important;
+  padding-top: 15px !important;
 }
 .management .contact-options a {
   float: left;
@@ -4054,8 +4061,8 @@ table.listing tbody tr.odd td {
 .best-list img {
   width: 100%;
 }
-.office-photos .row {
-  margin-top: 60px;
+.office-photos .photo-row {
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .office-photos .image-inline {
@@ -4098,6 +4105,24 @@ table.listing tbody tr.odd td {
 }
 .download-item img {
   margin: 0 auto;
+}
+.kompetenzen {
+  margin-bottom: 0;
+}
+.kompetenzen-contact {
+  margin: 0;
+  text-align: center;
+}
+.referenzen-company {
+  margin: 0 !important;
+  font-size: 17px !important;
+}
+.aboutus-contact h3 {
+  margin: 0 !important;
+  font-size: 17px !important;
+}
+.team-photo-wrapper {
+  text-align: center;
 }
 .logo-star {
   position: absolute;
